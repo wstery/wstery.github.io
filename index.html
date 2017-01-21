@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Walkthrough</title>
+
+    <!-- default bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+
+<!-- THEMES MUST BE AFTER BOOTSTRAP CSS. -->
+
+    <!-- try themes from: https://startbootstrap.com/-->
+   <!--  <link rel="stylesheet" type="text/css" href="theme.css">
+ --> <!--    <link rel="stylesheet" type="text/css" href="theme2.css"> -->
+<!--  -->   <!--  <link rel="stylesheet" type="text/css" href="theme3.css"> -->
+   <link rel="stylesheet" type="text/css" href="theme4.css">
+   <!--  <link rel="stylesheet" type="text/css" href="theme5.css">
+ -->
+
+
+ <!--  font awesome    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+    
+    animate.css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
+    
+
+
+<!--     use this style for testing and development purposes
+ -->   <!--  <style type="text/css">
+    .container{border: 5px solid black;}
+    .row{border: 2px solid red;}
+    .row [class*=' col-']{border: 3px solid purple;}
+    </style> -->
+    
+</head>
+<body>
+<!-- everything will be in this container
+ --><div class="container">    
+
+<!-- row 1:jumbotron
+ --><div class="row">
+    <div class="col-xs-12
+                col-sm-12
+                col-md-12
+                col-lg-12">
+
+        <div class="jumbotron">
+          <h1>Hello, world!</h1>
+            <p>...</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+        </div>
+    </div> <!-- end of col -->
+</div>  <!-- end of row 1 -->
+
+
+<!-- row 2: thumbnails -->
+<div class="row">
+<!--         col 1
+ -->        <div class="col-xs-12
+                    col-sm-4
+                    col-md-4
+                    col-lg-4">
+
+            <div class="thumbnail">
+                <div class="embed-responsive embed-responsive-4by3">
+                <iframe class="embed-responsive-item" 
+                        src="https://www.youtube.com/embed/09R8_2nJtjg">
+                </iframe>
+                </div>      
+            
+                    <div class="caption">
+                    <h3>Vote now!</h3>
+                    <p>Click below to submit your vote.</p>
+                    <p><a href="#" class="btn btn-info" role="button">Yes</a> <a href="#" class="btn btn-danger" role="button">No</a></p>
+                    </div>
+            </div>
+        </div>  <!-- end of col 1 -->
+
+
+<!--      col 2
+ -->        <div class="col-xs-12
+                    col-sm-4
+                    col-md-4
+                    col-lg-4">
+
+            <div class="thumbnail">
+                 <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" 
+                        src="https://www.youtube.com/embed/dvgZkm1xWPE">
+                   </iframe>
+                </div>
+                    <div class="caption">
+                        <h3>Vote now!</h3>
+                        <p>Click below to submit your vote.</p>
+                        <p><a href="#" class="btn btn-info" role="button">Yes</a> <a href="#" class="btn btn-danger" role="button">No</a></p>
+                    </div>
+            </div>
+        </div>  <!-- end of col 2 -->
+
+<!--      col 3
+ -->    <div class="col-xs-12
+                col-sm-4
+                col-md-4
+                col-lg-4">
+
+            <div class="thumbnail">
+                 <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" 
+                        src="https://www.youtube.com/embed/YQHsXMglC9A">
+                   </iframe>
+                </div>
+                    <div class="caption">
+                       <h3>Vote now!</h3>
+                        <p>Click below to submit your vote.</p>
+                        <p><a href="#" class="btn btn-info" role="button">Yes</a> <a href="#" class="btn btn-danger" role="button">No</a></p>
+                    </div>
+            </div>
+    </div>  <!-- end of col 3 -->
+
+</div> <!-- end of row 2 -->
+
+
+<hr>
+
+<!--  start of row 3
+ --><!--  16:9 aspect ratio
+ --><div class="row">
+    <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" 
+                    src="https://www.youtube.com/embed/YykjpeuMNEk">
+            </iframe>
+            <!-- to make video autoplay - src="https://www.youtube.com/embed/YykjpeuMNEk/?autoplay=1&loop&start=30".  add in the /?autoplay=1&loop.  the &start=30 is for the timing on when the video plays from, i.e. this one makes the video start playing from the 30sec pt of that video.-->
+    </div>
+</div>
+
+ <hr> 
+ <!-- hr is to make space in btw things.  very faint grey line.
+4:3 aspect ratio
+end of row 3
+ -->
+
+<!-- start of row 4
+ --><div class="row">
+    <div class="col-xs-12
+            col-sm-6
+            col-md-6
+            col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <form action="https://script.google.com/macros/s/AKfycbzFCKCTHLYwz5Oyjh_qrFPWR7-RtaGOJ87ucMeLbjVeHKks5s-g/exec"
+                method="post">
+                    <legend>subscribe to our newsfeed</legend>
+                    <div class="form-group">
+                        <label for="Name">name</label>
+                        <input type="text" name="NAME" class="form-control" id="NAME" placeholder="e.g. adele">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">email</label>
+                        <input type="EMAIL" class="form-control" name="EMAIL" id="EMAIL" placeholder="e.g. adele@gmail.com">
+                    </div>
+                    <hr>
+                    <body>how often would you like to hear from us</body>
+
+                    <div class="form-group">
+                        <div class="radio">
+                            <label>
+                            <input type="radio" name="FREQUENCY" id="FREQUENCY" value="daily" checked="checked">daily
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="FREQUENCY" id="FREQUENCY" value="weekly" checked="checked">weekly
+                            </label>
+                        </div>
+                    <div>
+                            <button type="submit" class="btn btn-info wow bounce">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </form>
+    </div>
+ <!-- end of row 4 left -->
+
+<div class="row">
+    <div class="col-xs-12
+                col-sm-6
+                col-md-6
+                col-lg-6">
+
+        <h1> Title</h1>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+</div>
+
+
+
+<div class="row">
+
+    <div class="col-xs-12
+            col-sm-4
+            col-md-4
+            col-lg-4">
+        <h3 class="text-center">Table Title</h3>
+        <table class="table table-bordered">
+                <tr>
+                    <td>content 1</td>
+                    <td>content 2</td>
+                </tr>
+                
+                <tr>
+                    <td>content 1</td>
+                    <td>content 2</td>
+                </tr>
+
+                 <tr>
+                    <td>content 1</td>
+                    <td>content 2</td>
+                </tr>
+
+        </table>
+    </div>
+
+
+    <div class="col-xs-4
+            col-sm-4
+            col-md-4
+            col-lg-4">
+
+            <div class="embed-responsive
+                        embed-responsive-4by3">
+                        <iframe src="https://goo.gl/bFPEKF"
+                        class="responsive-embed-item"></iframe>
+             </div>
+    </div>
+
+
+   <div class="col-xs-12
+            col-sm-4
+            col-md-4
+            col-lg-4">
+        <div class="list-group">
+             <a href="#" class="list-group-item">
+                <i class="fa fa-telegram fa-fw"></i> ONE
+                </a>
+          
+           <a href="#" class="list-group-item">
+                <i class="fa fa-telegram fa-fw"></i> TWO
+                </a>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12
+            col-sm-12
+            col-md-12
+            col-lg-12">
+        <ul class="list-inline text-center">
+            <li>
+                <a href="#">
+                    <i class="fa fa-telegram fa-2x"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa fa-telegram fa-2x"></i>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+</div>  <!-- end of container -->
+
+
+<!-- jquery -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+<!-- bootstrap js -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/wow/1.1.2/wow.min.js"></script>
+<script>new WOW().init();</script>
+
+<script type="text/javascript" src="index(template).js"></script>
+
+</body>
+</html>
