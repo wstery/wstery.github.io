@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>2017 Music Awards</title>
+    <title>Top 10 Every Week</title>
 
     <!-- default bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -20,9 +20,10 @@
  -->
 
 
- <!--  font awesome    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
-    
-    animate.css -->
+ <!--  font awesome  -->  
+ <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+        
+   <!-- animate.css -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
     
 
@@ -48,14 +49,15 @@
                     col-lg-12">
 
             <div class="jumbotron">
-              <h1>Category: People's Choice Awards</h1>
-                <p>Vote for your favourite music video below, and stand a chance to win attractive prizes!</p>
+              <h1>Weekly Top Charts</h1>
+                <p>Vote for your favourite music video to be in the weekly top charts, and stand a chance to win attractive prizes!</p>
                 <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
             </div>
         </div> <!-- end of col -->
     </div>  <!-- end of row 1 -->
 
 
+<!-- normal working one -->
 <!-- row 2: thumbnails -->
     <div class="row">
 <!-- col 1 -->        
@@ -67,13 +69,13 @@
             <div class="thumbnail">
                 <div class="embed-responsive embed-responsive-4by3">
                     <iframe class="embed-responsive-item" 
-                            src="https://www.youtube.com/embed/09R8_2nJtjg">
+                            src="https://www.youtube.com/embed/nYh-n7EOtMA">
                     </iframe>
                 </div>      
                     <div class="caption">
                     <h3>Vote now!</h3>
                     <p>Click below to submit your vote.</p>
-                    <p><a href="#" class="btn btn-info" role="button" id="vote-btn">Yes</a> <a href="#" class="btn btn-danger" role="button">No</a></p>
+                    <p><a href="#" class="btn btn-info my-vote" role="button" id="vote-btn">Yes</a> <a href="#" class="btn btn-danger my-vote" role="button">No</a></p>
                     </div>
             </div>
         </div>  <!-- end of col 1 -->
@@ -86,15 +88,15 @@
                     col-lg-4">
 
             <div class="thumbnail">
-                 <div class="embed-responsive embed-responsive-4by3">
+                <div class="embed-responsive embed-responsive-4by3">
                     <iframe class="embed-responsive-item" 
-                        src="https://www.youtube.com/embed/dvgZkm1xWPE">
+                        src="https://www.youtube.com/embed/ANS9sSJA9Yc">
                    </iframe>
                 </div>
                     <div class="caption">
                         <h3>Vote now!</h3>
                         <p>Click below to submit your vote.</p>
-                        <p><a href="#" class="btn btn-info" role="button" id="vote-btn">Yes</a> <a href="#" class="btn btn-danger" role="button">No</a></p>
+                        <p><a href="#" class="btn btn-info my-vote" role="button" id="vote-btn">Yes</a> <a href="#" class="btn btn-danger my-vote" role="button" class id="vote-btn">No</a></p>
                     </div>
             </div>
         </div>  <!-- end of col 2 -->
@@ -108,13 +110,13 @@
             <div class="thumbnail">
                  <div class="embed-responsive embed-responsive-4by3">
                     <iframe class="embed-responsive-item" 
-                        src="https://www.youtube.com/embed/YQHsXMglC9A">
+                        src="https://www.youtube.com/embed/_dK2tDK9grQ">
                    </iframe>
                  </div>
                     <div class="caption">
                        <h3>Vote now!</h3>
                         <p>Click below to submit your vote.</p>
-                        <p><a href="#" class="btn btn-info" role="button" id="vote-btn">Yes</a> <a href="#" class="btn btn-danger" role="button" id="vote-btn">No</a></p>
+                        <p><a href="#" class="btn btn-info my-vote" role="button" class id="vote-btn">Yes</a> <a href="#" class="btn btn-danger my-vote" role="button" class id="vote-btn">No</a></p>
                     </div>
             </div>
          </div>  <!-- end of col 3 -->
@@ -127,11 +129,16 @@
 <!--  start of row 3
  --><!--  16:9 aspect ratio-->
     <div class="row">
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" 
-                    src="https://www.youtube.com/embed/YykjpeuMNEk">
-            </iframe>
-            <!-- to make video autoplay - src="https://www.youtube.com/embed/YykjpeuMNEk/?autoplay=1&loop&start=30".  add in the /?autoplay=1&loop.  the &start=30 is for the timing on when the video plays from, i.e. this one makes the video start playing from the 30sec pt of that video.-->
+        <div class="col-xs-12
+                    col-sm-12
+                    col-md-12
+                    col-lg-12">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" 
+                        src="https://www.youtube.com/embed/YykjpeuMNEk">
+                </iframe>
+                <!--  to make video autoplay - src="https://www.youtube.com/embed/YykjpeuMNEk/?autoplay=1&loop&start=30".  add in the /?autoplay=1&loop.  the &start=30 is for the timing on when the video plays from, i.e. this one makes the video start playing from the 30sec pt of that video. -->
+            </div>
         </div>
     </div>
 
@@ -151,58 +158,110 @@ end of row 3
                     <form action="https://script.google.com/macros/s/AKfycbzFCKCTHLYwz5Oyjh_qrFPWR7-RtaGOJ87ucMeLbjVeHKks5s-g/exec"
                     method="post">
                     
-                    <legend>Subscribe to our Weekly Top Charts</legend>
+                    <h1>Hear From Us!</h1>
                     <div class="form-group">
-                        <label for="Name">name</label>
-                        <input type="text" name="NAME" class="form-control" id="NAME" placeholder="e.g. Adele">
+                        <label for="Name">
+                      <!--if wanna put label/header above box, add it here-->
+                        </label>
+                        <input type="text" name="NAME" class="form-control" id="name-id" placeholder="enter your name here">
+                        <div class="alert alert-danger hidden" 
+                            id="name-error-id" 
+                            role="alert">Requires Minimum 4 Letters.</div>
                     </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">email</label>
-                            <input type="EMAIL" class="form-control" name="EMAIL" id="EMAIL" placeholder="e.g. maroon@gmail.com">
+                            <label for="exampleInputEmail1">
+                            <!--if wanna put label/header above box, add it here-->
+                            </label>
+                            <input type="email" 
+                                    class="form-control" 
+                                    name="EMAIL" 
+                                    id="email-id" 
+                                    placeholder="enter your email address here">
+                             <div class="alert alert-danger hidden" 
+                                    id="email-error-id" 
+                                    role="alert">Please Enter a Valid Email Address.
+                            </div>
                         </div>
-                        <hr>
-                        <body>How often would you like to hear from us?</body>
+                        
+                        <body>How Often?</body>
                     
                             <div class="form-group">
                                 <div class="radio">
                                 <label>
-                                <input type="radio" name="FREQUENCY" id="FREQUENCY" value="weekly" checked="checked">weekly
+                                <input type="radio" name="FREQUENCY" id="FREQUENCY" value="weekly" checked="checked">Weekly
                                 </label>
                                 </div>
                             </div>
 
                             <div class="radio">
                                 <label>
-                                <input type="radio" name="FREQUENCY" id="FREQUENCY" value="monthly" checked="checked">monthly
+                                <input type="radio" name="FREQUENCY" id="FREQUENCY" value="monthly" checked="checked">Monthly
                                 </label>
                             </div>
-                                <div>
-                                <button type="submit" class="btn btn-info wow bounce">Submit</button>
+                                    <hr>
+                                    <input type = "checkbox"
+                                            id="cb-id">
+                                    I Agree to The Terms & Conditions.
+                                    <hr>
+                                    <input type="submit"
+                                            id="submit-id"
+                                            disabled class="btn btn-info">
+
+                              
+                          <!--      <div>
+                                <button type="submit" 
+                                        id="submit-id"
+                                        class="btn btn-info wow bounce btn-submit">
+                                        Submit
+                                </button>
                                 </div>
+ -->
+                                   
                     </form>
                 </div>
             </div>
         </div> <!-- end of row 4 left column -->
 
-        <div class="col-xs-6
+        <!-- start of row 4 middle column -->
+        <div class="col-xs-12
                     col-sm-6
                     col-md-6
                     col-lg-6">
             <h1> Have Something to Say?</h1>
-            <p>We can be contacted through email or snail mail. </p>
+            <!-- <p> Say it through any of the following methods! </p> -->
+             
+                <div class="list-group">
+                        <a href="musicawards2017@email.com" class="list-group-item">
+                        <i class="fa fa-envelope-o"></i> &nbsp; weeklycharts@email.com
+                        </a>
+
+                            <a href="telephone" class="list-group-item">
+                               <i class="fa fa-phone"></i> &nbsp; +65 8899 7722
+                            </a>
+                                <a href="address" class="list-group-item">
+                                    <i class="fa fa-building-o"></i> &nbsp; Blk 79 Ayer Rajah Crescent
+                                </a>
+                        <!-- This code - &nbsp; - is to put a space btw font awesome icon and text-->
+                               
+                </div>
         </div>
-             <div class="col-xs-6
+        <!-- end of row 4 middle column-->
+
+        <!-- start of row 4 right column-->
+
+            <div class="col-xs-12
                         col-sm-6
                         col-md-6
                         col-lg-6">
 
-                <div class="embed-responsive embed-responsive-4by3">
+                <div class="embed-responsive embed-responsive-4by3" >
                     <iframe src="https://goo.gl/bFPEKF"
-                            class="responsive-embed-item"></iframe>
+                            class="responsive-embed-item" style="height: 260px;" ></iframe>
                 </div>
             </div>
-</div> <!--end of row 4-->
+        <!--end of row 4 right column -->
 
+</div> <!-- end of row 4-->
 </div>  <!-- end of container -->
 
 
@@ -214,7 +273,9 @@ end of row 3
 <script type="text/javascript" src="https://cdn.jsdelivr.net/wow/1.1.2/wow.min.js"></script>
 <script>new WOW().init();</script>
 
-<script type="text/javascript" src="index(template).js"></script>
+<script type="text/javascript" src="page.js"></script>
+
 
 </body>
 </html>
+
